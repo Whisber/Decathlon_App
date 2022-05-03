@@ -29,12 +29,20 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
-        <ShellContent Title="Anasayfa" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
-        <ShellContent Title="Kategoriler" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Categories}" />
-        <ShellContent Title="Sepetim" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Bag}" />
-        <ShellContent Title="Hesabım" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Account}" />
-    </TabBar>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Anasayfa" Icon="Home.png">
+            <local:HomePage/>
+        </ShellContent>
+        <ShellContent Title="Kategoriler" Icon="Categories.png">
+            <local:Categories/>
+        </ShellContent>
+        <ShellContent Title="Sepetim" Icon="Bag.png">
+            <local:Bag/>
+        </ShellContent>
+        <ShellContent Title="Hesabım" Icon="Account.png">
+            <local:Account/>
+        </ShellContent>
+    </FlyoutItem>
 
     <!--
         If you would like to navigate to this content you can do so by calling
