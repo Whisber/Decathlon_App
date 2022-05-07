@@ -16,5 +16,18 @@ namespace Decathlon_App.Views
         {
             InitializeComponent();
         }
+        private async void GotoHomePage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
+        }
+        private async void GotoAccount(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Account(),false);
+        }
+
+        private void Button_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
+        }
     }
 }

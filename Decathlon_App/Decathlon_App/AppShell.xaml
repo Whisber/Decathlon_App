@@ -14,7 +14,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="White" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -29,7 +29,7 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <TabBar>
         <ShellContent Title="Anasayfa" Icon="Home.png">
             <local:HomePage/>
         </ShellContent>
@@ -42,7 +42,7 @@
         <ShellContent Title="Hesabım" Icon="Account.png">
             <local:Account/>
         </ShellContent>
-    </FlyoutItem>
+    </TabBar>
 
     <!--
         If you would like to navigate to this content you can do so by calling
