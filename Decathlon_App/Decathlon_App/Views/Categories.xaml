@@ -12,7 +12,7 @@
                              
                     ></ImageButton>
                 <ImageButton Source="erkek.png"
-                             Clicked="ImageButton_Clicked_1"                           
+                                                      
                             />
                 <ImageButton Source="kadun.png"
                             />

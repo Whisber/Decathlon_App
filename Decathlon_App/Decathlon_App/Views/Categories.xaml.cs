@@ -20,12 +20,9 @@ namespace Decathlon_App.Views
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page());
+            await Navigation.PushAsync(new page1());
         }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
