@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Decathlon_App.Views.Account">
     <Shell.TitleView>
-        <Label Text="Hesabım" FontSize="15" FontAttributes="bold"  TextColor="Gray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <Label Text="Hesabım" FontSize="15" FontAttributes="bold"  TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
     </Shell.TitleView>
 
     <ContentPage.ToolbarItems>
