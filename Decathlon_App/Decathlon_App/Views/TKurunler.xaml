@@ -7,9 +7,46 @@
         
     </Shell.TitleView>
     
+    
     <ContentPage.Content>
         
         <StackLayout>
+            <Button 
+            
+                 Text="↑↓Akıllı Sıralama"
+                 TextColor="Black"
+                 TextTransform="None"
+                 BackgroundColor="White"
+                 BorderColor="Black"
+                 BorderWidth="1"
+                 CornerRadius="2"           
+                 HeightRequest="40"          
+                 WidthRequest="20"
+                Margin="10,10,200,0"
+                
+                 
+                
+            
+                       
+            ></Button>
+            <Button 
+            
+                 Text="Filtrele"
+                 TextColor="Black"
+                 TextTransform="None"
+                 BackgroundColor="White"
+                 BorderColor="Black"
+                 BorderWidth="1"
+                 CornerRadius="2"           
+                 HeightRequest="40"          
+                 WidthRequest="20"
+                 Margin="200,-46,10,0"
+                
+                
+            
+                       
+            ></Button>
+            
             <flv:FlowListView FlowColumnCount="2"   
                 SeparatorVisibility="Default"   
                 HasUnevenRows="True"  
