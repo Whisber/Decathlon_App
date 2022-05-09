@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Decathlon_App.Views.Categories">
+    
     <ContentPage.Content>
         <ScrollView Grid.Row="1">
           <StackLayout>
@@ -12,9 +13,11 @@
                              
                     ></ImageButton>
                 <ImageButton Source="erkek.png"
+                            Clicked="ImageButton_Clicked_1"
                                                       
                             />
                 <ImageButton Source="kadun.png"
+                             Clicked="ImageButton_Clicked_2"
                             />
                 <ImageButton Source="cocuk.png"
                             />

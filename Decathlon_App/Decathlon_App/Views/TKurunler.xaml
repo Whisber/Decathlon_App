@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Decathlon_App.Views.TKurunler">
+    <ContentPage.Content>
+        <StackLayout>
+            <flv:FlowListView FlowColumnCount="2"   
+                SeparatorVisibility="Default"   
+                HasUnevenRows="True"  
+                FlowItemTappedCommand="{Binding ItemTappedCommand}"   
+                FlowItemsSource="{Binding Items}">
+
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+
+                        <Frame BackgroundColor="White"  Margin="5">
+                            <StackLayout>
+                                <Image
+                                     Source="{Binding ImageSource}"/>
+                                <Label
+                                   HorizontalOptions="Fill"   
+                                   VerticalOptions="Fill"   
+                                   TextColor="Black"  
+                                   XAlign="Center"  
+                                   YAlign="Center"  
+                                   Text="{Binding UrunIsim}"/>
+                                <Label
+                                   HorizontalOptions="Fill"   
+                                   VerticalOptions="Fill"   
+                                   TextColor="Black"  
+                                   XAlign="Center"  
+                                   YAlign="Center"  
+                                   Text="{Binding UrunDetay}"/>
+                                <Label
+                                   HorizontalOptions="Fill"   
+                                   VerticalOptions="Fill"   
+                                   TextColor="Black"  
+                                   XAlign="Center"  
+                                   YAlign="Center"  
+                                   Text="{Binding UrunFiyat }"/>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using DLToolkit.Forms.Controls;
+using Xamarin.Forms;
 
 namespace Decathlon_App
 {
@@ -8,6 +9,7 @@ namespace Decathlon_App
         public App()
         {
             InitializeComponent();
+            FlowListView.Init();
 
             MainPage = new AppShell();
         }

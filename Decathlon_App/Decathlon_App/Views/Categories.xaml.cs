@@ -15,14 +15,24 @@ namespace Decathlon_App.Views
         public Categories()
         {
             InitializeComponent();
-            
+
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new page1());
+            Navigation.PushAsync(new tumsporlar());
         }
 
-       
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+           
+           Navigation.PushAsync(new erkek());
+           
+        }
+
+        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new kadın());
+        }
     }
 }

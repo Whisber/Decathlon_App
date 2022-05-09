@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Decathlon_App.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class page1 : ContentPage
+    public partial class kadın : ContentPage
     {
-        public page1()
+        public kadın()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }
