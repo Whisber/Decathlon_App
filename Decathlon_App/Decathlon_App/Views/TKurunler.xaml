@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="Decathlon_App.Views.TKurunler">
     <Shell.TitleView>
-        <Label Text="TÜM KAMP ÜRÜNLERİ" FontSize="20" FontAttributes="bold"  TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-        
+        <Label Text="TÜM KAMP ÜRÜNLERİ" FontSize="20" FontAttributes="bold"  TextColor="Black"  HorizontalOptions="CenterAndExpand" Margin="40,-100,0,0"/>
     </Shell.TitleView>
     
     
