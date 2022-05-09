@@ -11,8 +11,7 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Button 
-            
+            <Button        
                  Text="↑↓Akıllı Sıralama"
                  TextColor="Black"
                  TextTransform="None"
@@ -22,15 +21,9 @@
                  CornerRadius="2"           
                  HeightRequest="40"          
                  WidthRequest="20"
-                Margin="10,10,200,0"
-                
-                 
-                
-            
-                       
+                Margin="10,10,200,0"            
             ></Button>
-            <Button 
-            
+            <Button             
                  Text="Filtrele"
                  TextColor="Black"
                  TextTransform="None"
@@ -40,13 +33,8 @@
                  CornerRadius="2"           
                  HeightRequest="40"          
                  WidthRequest="20"
-                 Margin="200,-46,10,0"
-                
-                
-            
-                       
+                 Margin="200,-46,10,0"                       
             ></Button>
-            
             <flv:FlowListView FlowColumnCount="2"   
                 SeparatorVisibility="Default"   
                 HasUnevenRows="True"  

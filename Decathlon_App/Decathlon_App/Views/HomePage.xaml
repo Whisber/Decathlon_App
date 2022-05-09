@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="Decathlon_App.Views.HomePage"
              BackgroundColor = "White">
     <Shell.TitleView>
@@ -8,14 +8,14 @@
     </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
+            <SearchBar Placeholder="Ürün, spor veya marka ara" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" Margin="0,5,0,0" WidthRequest="380"/>
             <ScrollView>
                 <StackLayout>
-                    <SearchBar Placeholder="Ürün, spor veya marka ara" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" Margin="0,5,0,0" WidthRequest="350"/>
-                    <StackLayout BackgroundColor="Black" HeightRequest="250" Padding="5">
-                        <CarouselView x:Name="FırsatlarCarousel" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="White" HeightRequest="200" Padding="5">
+                        <CarouselView x:Name="FırsatlarCarousel" BackgroundColor="White">
                             <CarouselView.ItemTemplate>
                                 <DataTemplate>
-                                    
+                                    <ImageButton Source="{Binding}" BackgroundColor="White" Margin="0,0,0,0"/>
                                 </DataTemplate>
                             </CarouselView.ItemTemplate>
                         </CarouselView>
@@ -44,6 +44,33 @@
                     </ScrollView>
                     <Label Text="Öne Çıkan Ürünler" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="17" FontAttributes="Bold"/>
                     <Label Text="May Fest Fırsatları" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold"/>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="kampcadiriAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="kampcantaAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="sandalyeAnasayfa.png" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="indirimAnasayfa2.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                        </StackLayout>
+                    </ScrollView>
+                    <ImageButton Source="indirimAnasayfa.PNG"/>
+                    <Label Text="Ekipman" FontSize="15" FontAttributes="Bold" Margin="10,5,0,5" TextColor="Black"/>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="indirimAnasayfa2.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="sandalyeAnasayfa.png" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="kampcadiriAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="kampcantaAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                        </StackLayout>
+                    </ScrollView>
+                    <Label Text="Giyim" FontSize="16" FontAttributes="Bold" Margin="10,5,0,5" TextColor="Black"/>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="shirtAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="sortAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="taytAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="taytAnasayfa2.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                        </StackLayout>
+                    </ScrollView>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

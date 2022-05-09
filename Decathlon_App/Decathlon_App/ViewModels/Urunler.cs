@@ -61,7 +61,6 @@ namespace Decathlon_App.ViewModels
             Items.Add(urunitem_1);
             Items.Add(urunitem_2);
             Items.Add(urunitem_4);
-
             Items.Add(urunitem_5);
 
 

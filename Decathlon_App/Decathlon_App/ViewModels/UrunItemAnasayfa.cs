@@ -10,6 +10,6 @@ namespace Decathlon_App.ViewModels
 {
     public class UrunItemAnasayfa : BindableObject
     {
-      
+     
     }
 }

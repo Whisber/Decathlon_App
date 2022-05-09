@@ -8,80 +8,43 @@ using Xamarin.Forms;
 
 namespace Decathlon_App.ViewModels
 {
-    public class ÜrünModel : BindableObject
+    internal class UrunModel
     {
-       /* private HomePage homePage;
+        private string image;
+        public string ImageSource
+        {
+            get { return image; }
+            set { image = value; }
+        }
+        private string uruni;
+        public string UrunIsim
+        {
+            get { return uruni; }
+            set { uruni = value; }
+        }
+        private string urund;
+        public string UrunDetay
+        {
+            get { return urund; }
+            set { urund = value; }
 
-        public ÜrünModel(HomePage homePage)
+        }
+        private string urunf;
+        private HomePage homePage;
+
+        public UrunModel(HomePage homePage)
         {
             this.homePage = homePage;
-            AddItems();
         }
 
-        private void AddItems()
+        public UrunModel()
         {
-            UrunItemAnasayfa urunItemAnasayfa = new UrunItemAnasayfa()
-            {
-                ImageSource = "sporayakkabi.PNG",
-                urunIsmi = string.Format(""),
-                urunDetayi = string.Format(""),
-                urunFiyati = string.Format("")
-            };
-            UrunItemAnasayfa urunItemAnasayfa_1 = new UrunItemAnasayfa()
-            {
-                ImageSource = "bisiklet.PNG",
-                urunIsmi = string.Format(""),
-                urunDetayi = string.Format(""),
-                urunFiyati = string.Format("")
-            };
-            UrunItemAnasayfa urunItemAnasayfa_2 = new UrunItemAnasayfa()
-            {
-                ImageSource = "cadir1.PNG",
-                urunIsmi = string.Format(""),
-                urunDetayi = string.Format(""),
-                urunFiyati = string.Format("")
-            };
-            UrunItemAnasayfa urunItemAnasayfa_3 = new UrunItemAnasayfa()
-            {
-                ImageSource = "sporayakkabi.PNG",
-                urunIsmi = string.Format(""),
-                urunDetayi = string.Format(""),
-                urunFiyati = string.Format("")
-            };
-            Items.Add(urunItemAnasayfa);
-            Items.Add(urunItemAnasayfa_1);
-            Items.Add(urunItemAnasayfa_2);
-            Items.Add(urunItemAnasayfa_3);
         }
 
-        private ObservableCollection<UrunItemAnasayfa> _items = new ObservableCollection<UrunItemAnasayfa>();
-        public ObservableCollection<UrunItemAnasayfa> Items
+        public string UrunFiyat
         {
-            get
-            {
-                return _items;
-            }
-            set
-            {
-                if (_items != value)
-                {
-                    _items = value;
-                    OnPropertyChanged(nameof(Items));
-                }
-            }
+            get { return urunf; }
+            set { urunf = value; }
         }
-
-        public Command ItemTappedCommand
-        {
-            get
-            {
-                return new Command((data) =>
-                {
-                    // Page.Navigation.PushAsync(new HomePage()); hata veriyor yapılacak
-                });
-            }
-        }
-
-        public string ImageSource { get; private set; } */
     }
 }
