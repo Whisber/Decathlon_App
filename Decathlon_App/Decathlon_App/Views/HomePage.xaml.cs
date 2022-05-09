@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Decathlon_App.Models;
+using Decathlon_App.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,21 @@ namespace Decathlon_App.Views
         public HomePage()
         {
             InitializeComponent();
+            List<string> CarouselItems = new List<string>()
+            {
+                "indirim2.PNG",
+                "indirim3.PNG"
+            };
+            FırsatlarCarousel.ItemsSource = CarouselItems;
+        }
+
+        internal void DisplayAlert(object p)
+        {
+            throw new NotImplementedException();
+        }
+        private async void GotoCamp(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TKurunler());
         }
     }
 }

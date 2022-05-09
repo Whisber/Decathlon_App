@@ -10,8 +10,40 @@
         <StackLayout>
             <ScrollView>
                 <StackLayout>
-                    <SearchBar Placeholder="Ürün, spor veya marka ara" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="LightGray"/>
-                    
+                    <SearchBar Placeholder="Ürün, spor veya marka ara" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray" Margin="0,5,0,0" WidthRequest="350"/>
+                    <StackLayout BackgroundColor="Black" HeightRequest="250" Padding="5">
+                        <CarouselView x:Name="FırsatlarCarousel" BackgroundColor="Black">
+                            <CarouselView.ItemTemplate>
+                                <DataTemplate>
+                                    
+                                </DataTemplate>
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                    </StackLayout>
+                    <Label Text="Öne Çıkanlar" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold"/>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="sporayakkabi.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="cadir1.PNG" Clicked="GotoCamp"/>
+                            <ImageButton Source="bisiklet.PNG"/>
+                            <ImageButton Source="paten.PNG" />
+                            <ImageButton Source="fitness.PNG"/>
+                            <ImageButton Source="yuzme.PNG" />
+                        </StackLayout>
+                    </ScrollView>
+                    <Label Text="Sporlar" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold"/>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="kosuAnasayfa.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
+                            <ImageButton Source="kampAnasayfa.PNG" Clicked="GotoCamp"/>
+                            <ImageButton Source="fitnessAnasayfa.PNG"/>
+                            <ImageButton Source="bisikletAnasayfa.PNG" />
+                            <ImageButton Source="patenAnasayfa.PNG"/>
+                            <ImageButton Source="yuzmeAnasayfa.PNG" />
+                        </StackLayout>
+                    </ScrollView>
+                    <Label Text="Öne Çıkan Ürünler" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="17" FontAttributes="Bold"/>
+                    <Label Text="May Fest Fırsatları" TextColor="Black" Margin="10,30,0,0" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
