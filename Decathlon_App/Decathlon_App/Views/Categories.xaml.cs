@@ -20,7 +20,7 @@ namespace Decathlon_App.Views
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new tumsporlar());
+            await Navigation.PushAsync(new tumsporlar());
         }
 
         private void ImageButton_Clicked_1(object sender, EventArgs e)

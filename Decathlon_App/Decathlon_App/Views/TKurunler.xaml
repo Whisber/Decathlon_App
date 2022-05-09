@@ -2,7 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="Decathlon_App.Views.TKurunler">
+    <Shell.TitleView>
+        <Label Text="TÜM KAMP ÜRÜNLERİ" FontSize="20" FontAttributes="bold"  TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        
+    </Shell.TitleView>
+    
     <ContentPage.Content>
+        
         <StackLayout>
             <flv:FlowListView FlowColumnCount="2"   
                 SeparatorVisibility="Default"   
@@ -16,8 +22,14 @@
                         <Frame BackgroundColor="White"  Margin="5">
                             <StackLayout>
                                 <Image
-                                     Source="{Binding ImageSource}"/>
+                                     Source="{Binding ImageSource}"
+                                    Margin="0,0,0,0"
+                                    WidthRequest="150"
+                                    HeightRequest="150"/>
+                                     
                                 <Label
+                                   FontAttributes="Bold"
+                                   FontSize="17"
                                    HorizontalOptions="Fill"   
                                    VerticalOptions="Fill"   
                                    TextColor="Black"  
@@ -25,15 +37,18 @@
                                    YAlign="Center"  
                                    Text="{Binding UrunIsim}"/>
                                 <Label
-                                   HorizontalOptions="Fill"   
-                                   VerticalOptions="Fill"   
+                                    FontSize="14"
+                                   HorizontalOptions="Start"   
+                                   VerticalOptions="Start"   
                                    TextColor="Black"  
                                    XAlign="Center"  
                                    YAlign="Center"  
                                    Text="{Binding UrunDetay}"/>
                                 <Label
-                                   HorizontalOptions="Fill"   
-                                   VerticalOptions="Fill"   
+                                   FontSize="17"
+                                   FontAttributes="Bold"                                  
+                                   HorizontalOptions="Start"   
+                                   VerticalOptions="Start"   
                                    TextColor="Black"  
                                    XAlign="Center"  
                                    YAlign="Center"  
